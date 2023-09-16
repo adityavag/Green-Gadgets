@@ -40,11 +40,11 @@ export default function Locator() {
         <div>
           <p className='text-6xl font-semibold grid grid-row-3 mb-16 mt-20'>Locate Recycling Facility</p>
           <p className='text-[1.2rem]'>Simplify your quest to locate the closest E-Waste recycling facility. Begin your eco-conscious journey effortlessly by discovering convenient and responsible disposal options in your immediate <span className='block'>area.</span></p>
-          <Link to="/locator"><button className='bg-[#014558] text-white rounded-md font-bold text-xl px-8 py-4 mt-20' onClick={getCurrentLocation}>Facilities Near Me</button></Link>
+          <Link to="/locator"><button className='bg-[#014558] text-white rounded-md font-bold text-xl px-8 py-4 mt-20' onClick={getCurrentLocation}><a href="#locate">Facilities Near Me</a></button></Link>
         </div>
         <img src={locateImage} className=' max-lg:mt-8 max-lg:mx-auto mt-20' />
       </div>
-      <div className='bg-[#A8D27C] rounded-t-xl'>
+      <div className='bg-[#A8D27C] rounded-t-xl' id="locate">
       <div className=' ml-24 mr-24 max-lg:0'>
         <div className='grid grid-cols-2 max-lg:grid-cols-1 p-8'>
           <iframe src='api\index.html' width={470} height={470} className='border-2 border-black'></iframe>
