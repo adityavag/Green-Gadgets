@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import $ from 'jquery';
 import axios from 'axios';
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer';
 
 export default function Recycle() {
   const [deviceWeight, setDeviceWeight] = useState('');
@@ -24,7 +25,7 @@ export default function Recycle() {
       <Navbar />
       <div className='p-8 grid grid-cols-2 max-lg:grid-cols-1 font-montserrat'>
         <div>
-          <p className='text-6xl font-semibold grid grid-row-3 mb-8'>Waste to Wealth.</p>
+          <p className='text-6xl font-semibold grid grid-row-3 mb-8'>Waste to Wealth</p>
           <p className='text-[1.2rem]'>Join the E-waste recycling movement and accumulate credit points as you responsibly dispose of electronics, boosting sustainability efforts.</p>
           <div className='flex flex-col mt-6'>
             <span className=''>Gold - 0</span>

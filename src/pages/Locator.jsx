@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 import locateImage from '../assets/Images/locate.png'
 import locationData from '../../api/output.json'
 import NewsCard from '../components/NewsCard'
+import Footer from '../components/Footer'
 
 export default function Locator() {
   const [lat, setLat] = useState(0);

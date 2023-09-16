@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import land from '../assets/Images/landing.png'
 import { Link } from 'react-router-dom'
+import Footer from '../components/Footer'
 export default function Landing() {
   return (
     <div className=''>
