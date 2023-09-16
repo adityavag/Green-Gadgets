@@ -28,9 +28,9 @@ export default function Recycle() {
           <p className='text-6xl font-semibold grid grid-row-3 mb-8'>Waste to Wealth</p>
           <p className='text-[1.2rem]'>Join the E-waste recycling movement and accumulate credit points as you responsibly dispose of electronics, boosting sustainability efforts.</p>
           <div className='flex flex-col mt-6'>
-            <span className=''>Gold - 0</span>
-            <span className=''>Silver - 0gm</span>
-            <span className=''>Aluminium - 0gm</span>
+            <span className=''>Gold - 0 gm</span>
+            <span className=''>Silver - 0 gm</span>
+            <span className=''>Aluminium - 0 gm</span>
           </div>
         </div>
         <form className='max-lg:mt-16'>
