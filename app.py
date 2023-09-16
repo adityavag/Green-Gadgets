@@ -51,15 +51,15 @@ def predict():
     copper1 = math.ceil((copper * prices.get("copper") / 5))
     total_credit_points = (gold1 + silver1 + palladium1 + platinum1 + copper1)
 
-    response_message = f"<div style='font-size: 25px; ><strong>Credit Score:</strong> {int(total_credit_points)}</div>"
-    response_message += f"<div style='font-size: 25px;'><strong>Gold:</strong> {gold}</div>"
-    response_message += f"<div style='font-size: 25px;'><strong>Silver:</strong> {silver}</div>"
-    response_message += f"<div style='font-size: 25px;'><strong>Copper:</strong> {copper}</div>"
-    response_message += f"<div style='font-size: 25px;'><strong>Palladium:</strong> {palladium}</div>"
-    response_message += f"<div style='font-size: 25px;'><strong>Platinum:</strong> {platinum}</div>"
+    response_message = f"<div style='font-size: 20px;'><strong>Credit Score:</strong> {int(total_credit_points)}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Gold:</strong> {gold}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Silver:</strong> {silver}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Copper:</strong> {copper}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Palladium:</strong> {palladium}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Platinum:</strong> {platinum}</div>"
+    response_message += f"<div style='font-size: 20px;'><strong>Credit Score:</strong> {int(total_credit_points)}</div>"
 
     return response_message
-
 
 
 
