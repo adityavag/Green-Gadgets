@@ -6,6 +6,7 @@ import Locator from '../src/pages/Locator'
 import News from '../src/pages/News'
 import Recycle from './pages/Recycle';
 import About from './pages/About';
+import Footer from './components/Footer';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/about" element={<About />} ></Route>
       </Routes>
     </BrowserRouter>
+    <Footer/>
   </>
   )
 }
