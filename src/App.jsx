@@ -5,6 +5,7 @@ import Landing from '../src/pages/Landing'
 import Locator from '../src/pages/Locator'
 import News from '../src/pages/News'
 import Recycle from './pages/Recycle';
+import About from './pages/About';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/locator" element={<Locator />} ></Route>
         <Route path="/news" element={<News />} ></Route>
         <Route path="/recycle" element={<Recycle />} ></Route>
+        <Route path="/about" element={<About />} ></Route>
       </Routes>
     </BrowserRouter>
   </>

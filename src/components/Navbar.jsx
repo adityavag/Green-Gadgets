@@ -14,6 +14,7 @@ export default function Navbar() {
                     {/* <Link to="/news" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-4 hover:underline hover:font-medium">News</Link> */}
                     <a href="#news" className="text-lg no-underline text-grey-darkest hover:text-[#A8D27C] ml-4 hover:underline hover:font-medium">News</a>
                     <Link to="/recycle" className="text-lg no-underline text-grey-darkest hover:text-[#A8D27C] ml-4 hover:underline hover:font-medium">Recycle</Link>
+                    <Link to="/about" className="text-lg no-underline text-grey-darkest hover:text-[#A8D27C] ml-4 hover:underline hover:font-medium">About</Link>
                 </div>
             </nav>
         </div>
