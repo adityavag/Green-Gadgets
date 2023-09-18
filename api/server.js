@@ -6,7 +6,6 @@ const { spawn } = require('child_process');
 const nodePickle = require('node-pickle');
 const fs = require('fs');
 
-const pickledData = fs.readFileSync('mobile.pkl');
 
 
 app.use(cors({
@@ -25,19 +24,5 @@ app.post('/', function (req, res) {
     })
     res.send("Hello")
 })
-app.post('/mobile', function (req, res) {
-    const { weight } = req.body;
-    const process = spawn('python', ["./Mobile.py", 140]);
-    process.stdout.on('data', (data) => {
-        console.log(`${data}`)
-    })
-    nodePickle.loads(pickledData)
-    .then(data => {
-        console.log(data);
-    })
-    .catch(error => {
-        console.log(error);
-    })
-    res.send("Hello")
-})
+
 app.listen(PORT, () => console.log(`Listening on port ${PORT}!`))
