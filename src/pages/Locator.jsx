@@ -61,7 +61,7 @@ export default function Locator() {
         </div>
       </div>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }
