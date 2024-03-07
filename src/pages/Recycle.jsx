@@ -32,7 +32,7 @@ export default function Recycle() {
     }
     await setTimeout(5000); 
     console.log(data);
-    const res = await axios.post("http://127.0.0.1:5000/api", data);
+    const res = await axios.post("https://green-gadgets-api.onrender.com/api", data);
     setReceviedData(res.data);
     setLoading(false);
     console.log(data);
