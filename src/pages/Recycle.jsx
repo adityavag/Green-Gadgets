@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
-import $ from 'jquery';
 import axios from 'axios';
-import { Link } from 'react-router-dom'
-import Footer from '../components/Footer';
+
 import dustbin from '../assets/Images/last.png'
 
 
