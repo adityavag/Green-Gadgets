@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import Navbar from '../components/Navbar'
 import locateImage from '../assets/Images/locate.png'
-import locationData from '../../api/output.json'
+import locationData from '../assets/mapContent/output.json'
 import NewsCard from '../components/NewsCard'
 import Footer from '../components/Footer'
 
@@ -18,16 +18,16 @@ export default function Locator() {
       latitude = position.coords.latitude;
       longitude = position.coords.longitude;
       console.log("Latitude : ", latitude, "Longitude : ", longitude);
-      setLat(latitude);
-      setLong(longitude);
+      setLat(Number(latitude));
+      setLong(Number(longitude));
     });
 
     axios({
       method: 'post',
       url: 'http://localhost:3001',
       data: {
-        lat: latitude,
-        long: longitude
+        lat: lat,
+        long: long
       }
     });
     console.log(locationData[1].Address)
@@ -47,7 +47,7 @@ export default function Locator() {
       <div className='bg-[#A8D27C] rounded-t-xl' id="locate">
       <div className=' ml-24 mr-24 max-lg:0'>
         <div className='grid grid-cols-2 max-lg:grid-cols-1 p-8'>
-          <iframe src='api\index.html' width={470} height={470} className='border-2 border-black'></iframe>
+          <iframe src='src/assets/mapContent/index.html' width={470} height={470} className='border-2 border-black'></iframe>
           <div className=''>
             <div className='grid grid-row-4 gap-3 p-10 bg-[#014558] text-white'>
               <ul className=''>
